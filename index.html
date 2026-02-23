@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Steam Cooker – Smart Steam Cooking for Sustainable Food Systems</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background:#141414;
+    color:#f2f2f2;
+    line-height:1.6;
+}
+
+.main-logo{
+    width:100px;
+    max-width:80%;
+    margin-bottom:10px;
+}
+
+/* COLORS */
+:root{
+    --green:#3cb371;
+    --orange:#f39c12;
+    --blue:#3498db;
+    --dark:#1f1f1f;
+    --card:#2c2c2c;
+}
+
+/* HEADER */
+header{
+    background:linear-gradient(90deg,var(--green),var(--blue));
+    padding:25px 20px;
+    text-align:center;
+}
+
+header h1{
+    font-size:2.4rem;
+}
+
+nav{
+    margin-top:10px;
+}
+
+nav a{
+    color:white;
+    margin:0 10px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:var(--orange);
+}
+
+/* GENERAL */
+section{
+    padding:60px 20px;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+}
+
+h2{
+    text-align:center;
+    color:var(--blue);
+    margin-bottom:25px;
+}
+
+h3{
+    color:var(--orange);
+    margin-bottom:10px;
+}
+
+p{
+    margin-bottom:15px;
+}
+
+ul{
+    padding-left:18px;
+}
+
+/* HERO */
+.hero{
+    background:linear-gradient(180deg,#1f2d1f,#121212);
+    text-align:center;
+    padding:90px 20px;
+}
+
+.hero h2{
+    font-size:2.5rem;
+}
+
+.hero p{
+    max-width:750px;
+    margin:auto;
+}
+
+.btn{
+    display:inline-block;
+    background:var(--orange);
+    color:white;
+    padding:12px 25px;
+    border-radius:5px;
+    font-weight:bold;
+    margin-top:20px;
+}
+
+.btn:hover{
+    background:var(--blue);
+}
+
+/* GRID */
+.grid{
+    display:grid;
+    gap:25px;
+}
+
+.grid-2{
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+}
+
+/* CARDS */
+.card{
+    background:var(--card);
+    padding:22px;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,0.6);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:8px;
+    background:#555;
+    margin-bottom:10px;
+}
+
+/* TEAM */
+.team-member{
+    text-align:center;
+}
+
+.team-member img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    background:#555;
+    margin-bottom:10px;
+}
+
+/* PARTNERS */
+.partners img{
+    height:80px;
+    background:#555;
+    margin:10px;
+}
+
+/* FORM */
+input, textarea{
+    width:100%;
+    padding:10px;
+    margin-bottom:10px;
+    border-radius:5px;
+    border:none;
+}
+
+/* FOOTER */
+footer{
+    background:#000;
+    text-align:center;
+    padding:25px 15px;
+    font-size:0.9rem;
+}
+
+</style>
+</head>
+
+<body>
+
+
+<header>
+    
+    <img src="images/log-removebg-preview.png" alt="Steam Cooker logo" class="main-logo">
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#problem">Problem</a>
+        <a href="#solution">Solution</a>
+        <a href="#impact">Impact</a>
+        <a href="#plan">Project Plan</a>
+        <a href="#team">Team</a>
+        <a href="#partners">Partners</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div style="margin-top:10px;">
+    <button onclick="setLang('en')" class="btn">EN</button>
+    <button onclick="setLang('fr')" class="btn">FR</button>
+    </div>
+</header>
+
+<div id="lang-en">
+<section id="home" class="hero">
+    <h2>Modernising tradition, preserving the environment</h2>
+    <p>
+        Steam Cooker is an intelligent electric steam cooking system developed by students of the
+        National University of Agriculture (UNA), Benin, to modernise traditional cereal-based food processing
+        while protecting forests and improving women’s working conditions.
+    </p>
+    <a href="#contact" class="btn">Support our project</a>
+</section>
+
+<section id="problem">
+<div class="container">
+<h2>Problem and opportunity</h2>
+
+<div class="grid grid-2">
+<div class="card">
+<img src="images/OIP.webp" alt="[PHOTO TRADITIONAL COOKING – WOMEN COOKING WITH WOOD]">
+<p>
+In Benin, artisanal cereal processing is a major pillar of the local food system.
+More than 90% of actors in this value chain are women producing and selling steamed foods such as
+Ablo, Ablah, Lèlè, Com and Wassa-wassa.
+</p>
+</div>
+
+<div class="card">
+<p>
+Traditional steam cooking relies exclusively on firewood or charcoal.  
+This causes deforestation, greenhouse gas emissions and serious health risks due to smoke exposure.
+Biomass represents more than 60% of national energy consumption and more than 80% of households in
+sub-Saharan Africa still depend on wood for cooking.
+</p>
+
+<p>
+Lack of temperature control leads to uneven cooking, variable product quality and economic losses.
+While firewood suppliers benefit from the system, women traders bear the health and economic risks.
+</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="solution">
+<div class="container">
+<h2>Steam Cooker – The solution</h2>
+
+<div class="grid grid-2">
+
+<div class="card">
+<img src="tt.jpg" alt="[PHOTO PROTOTYPE STEAM COOKER]">
+<img src="IMG-20260218-WA0135.jpg" alt="[PHOTO PROTOTYPE STEAM COOKER]">
+<p>
+Steam Cooker is an intelligent electric steam cooking machine inspired by the simplicity of a rice cooker
+and specifically designed for traditional local foods.
+It automatically regulates temperature to ensure clean, even and energy-efficient cooking.
+</p>
+<p>
+The solution modernises traditional practices without changing recipes or cultural characteristics.
+It is compatible with future solar integration.
+</p>
+</div>
+
+<div class="card">
+<ul>
+<p>
+Steam Cooker est un cuiseur vapeur électrique intelligent conçu pour remplacer la cuisson traditionnelle au bois utilisée dans la préparation de l’Ablo et d’autres aliments vapeur. Il s’agit d’un système simple, sécurisé et économe en énergie qui permet de produire une vapeur contrôlée grâce à un dispositif de régulation automatique de la température.
+L’appareil intègre une résistance électrique optimisée, un capteur thermique et un module de contrôle qui maintient une température stable tout au long du processus de cuisson. Cette stabilité garantit une cuisson homogène, réduit les pertes et améliore la qualité finale du produit.
+Steam Cooker diminue fortement la dépendance au bois de chauffage, réduit les émissions de fumée et protège la santé des utilisatrices, majoritairement des femmes. Il améliore également la productivité en réduisant le temps de cuisson et en assurant des résultats constants à chaque cycle.
+Conçu pour être accessible, robuste et adaptable, le système peut évoluer vers une alimentation solaire et être utilisé pour d’autres produits traditionnels cuits à la vapeur. Steam Cooker constitue ainsi une solution concrète, durable et adaptée aux réalités locales pour moderniser la transformation alimentaire artisanale.
+</p>
+<li>Automatic temperature regulation</li>
+<li>Alternative to wood and charcoal cooking</li>
+<li>Designed and developed in Kétou, Plateau Department, Benin</li>
+<li>Tested with women vendors of Ablo, Com, Lèlè, Ablah and Wassa-wassa</li>
+<li>Developed in partnership with AgriTech Hub (UNA)</li>
+<li>Seed funding: 1000 € for the prototype</li>
+</ul>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="impact">
+<div class="container">
+<h2>Project impacts</h2>
+
+<div class="grid grid-2">
+
+<div class="card">
+<h3>Environmental sustainability</h3>
+<p>
+Women vendors consume approximately 15–25 kg of firewood per day.
+The pilot phase can avoid 1 to 1.5 tons of wood over six months.
+On a larger scale, this significantly reduces pressure on forests, limits deforestation and improves local air quality.
+</p>
+</div>
+
+<div class="card">
+<h3>Food and nutrition security</h3>
+<p>
+Steam Cooker improves cooking stability and food safety by ensuring controlled and reproducible
+temperature conditions. This improves product quality, reduces waste and strengthens consumer trust.
+Cultural preferences and traditional recipes are fully preserved.
+</p>
+</div>
+
+<div class="card">
+<h3>Socio-economic impact</h3>
+<p>
+The project directly targets women processors. It reduces exposure to smoke and heat,
+improves productivity and supports income stability.
+In the long term, it can create jobs in equipment manufacturing, maintenance and training.
+</p>
+</div>
+
+<div class="card">
+<h3>Key figures</h3>
+<ul>
+<li>15–25 kg of wood saved per woman per day</li>
+<li>More than 90% of processors are women</li>
+<li>60% of national energy consumption from biomass</li>
+<li>1–1.5 tons of wood saved during the pilot phase</li>
+</ul>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="plan">
+<div class="container">
+<h2>Project goals and implementation plan</h2>
+
+<div class="grid grid-2">
+
+<div class="card">
+<h3>Objectives (2026 challenge period)</h3>
+<ul>
+<li>Collect real cooking temperature data from traditional steam cooking</li>
+<li>Develop the electronic control and sensor system of the Steam Cooker prototype</li>
+<li>Test the system with five women vendors in real working conditions</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Timeline (March – September 2026)</h3>
+<ul>
+<li>March–April: design and thermal protocol development</li>
+<li>April–May: purchasing, assembly and calibration</li>
+<li>June: installation and user training</li>
+<li>June–July: field testing and data collection</li>
+<li>August: impact analysis and consumer surveys</li>
+<li>September: reporting and dissemination</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Monitoring and evaluation</h3>
+<ul>
+<li>Wood consumption before and after installation</li>
+<li>Electricity consumption per cooking cycle</li>
+<li>Temperature stability</li>
+<li>Cooking time and production volume</li>
+<li>Women’s income and satisfaction</li>
+<li>Consumer satisfaction surveys</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Scalability</h3>
+<p>
+The system is based on locally available components and simple technology.
+It can be replicated in other municipalities of the Plateau Department and later across Benin.
+If each vendor saves 20 kg of wood per day, this represents around 120 tons of wood saved per year.
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="team">
+<div class="container">
+<h2>Our team</h2>
+
+<div class="grid grid-2">
+
+<div class="team-member"><img src="rrr.jpeg" alt="team-member"><h4>Rouchdane A. Olayiwolé OLOULOTAN</h4></div>
+<div class="team-member"><img src="michel.jpeg" alt=""><h4>Michel Carrel Akotenou Kpèssou GANDONOU</h4></div>
+<div class="team-member"><img src="godson.jpeg" alt=""><h4>Israël Godfried Samuel TOGBE</h4></div>
+<div class="team-member"><img src="hachi.jpeg" alt=""><h4>Hachirath Adouni Monchebolatan ABOUBAKAR</h4></div>
+<div class="team-member"><img src="ariane.jpeg" alt=""><h4>Ariane Harmonie Marina DJIHOULANDE</h4></div>
+<div class="team-member"><img src="lei.jpeg" alt=""><h4>Léila OLYMPIO</h4></div>
+<div class="team-member"><img src="manane.jpeg" alt=""><h4>Abdul Manane Aremou AKANDE</h4></div>
+<div class="team-member">
+<img src="togeth.jpeg" alt="[TEAM PHOTO]">
+<h4>TEAM</h4>
+<p>
+“We want to reduce women’s workload while protecting our forests.”
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="partners">
+<div class="container">
+<h2>Partners and stakeholders</h2>
+
+<div class="card">
+<ul>
+<li>AgriTech Hub and CeCoMA – National University of Agriculture</li>
+<li>Artificial Intelligence Laboratory – Benin Excellence</li>
+<li>Dr. Ing. Maurel Aza-Gnandji – Electrical and renewable energy expert</li>
+<li>Plume Verte – University Press and Radio Kétou</li>
+<li>Women food vendors and the Association of Women Processors of Kétou</li>
+</ul>
+</div>
+
+<div class="partners" style="text-align:center;">
+<img src="images/una.jpg" alt="[PARTNER LOGO]">
+<img src="images/egr.jpg" alt="[PARTNER LOGO]">
+<img src="images/ag.PNG" alt="[PARTNER LOGO]">
+<img src="images/be.jpg" alt="[PARTNER LOGO]">
+</div>
+
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+<h2>Contact and support</h2>
+
+<p>
+Would you like to support Steam Cooker, collaborate with us or learn more about the project?
+</p>
+
+<form style="max-width:500px;margin:auto;">
+<input type="text" placeholder="Your name">
+<input type="email" placeholder="Your email">
+<textarea rows="5" placeholder="Your message"></textarea>
+<button class="btn">Send message</button>
+</form>
+
+</div>
+</section>
+
+<footer>
+<p>Steam Cooker – National University of Agriculture (UNA), Benin – 2026</p>
+<p>Smart steam cooking for sustainable and resilient local food systems.</p>
+</footer>
+</div>
+
+
+
+
+
+
+<div id="lang-fr" style="display:none;">
+
+<section id="home" class="hero">
+    <h2>Moderniser la tradition, préserver l’environnement</h2>
+    <p>
+        Steam Cooker est un système intelligent de cuisson vapeur électrique développé par des étudiants de
+        l’Université Nationale d’Agriculture (UNA), au Bénin, pour moderniser la transformation artisanale
+        des céréales tout en protégeant les forêts et en améliorant les conditions de travail des femmes.
+    </p>
+    <a href="#contact" class="btn">Soutenir notre projet</a>
+</section>
+
+<section id="problem">
+<div class="container">
+<h2>Problématique et opportunité</h2>
+
+<div class="grid grid-2">
+<div class="card">
+<img src="images/OIP.webp" alt="[PHOTO CUISINE TRADITIONNELLE – FEMMES CUISINANT AU BOIS]">
+<p>
+Au Bénin, la transformation artisanale des céréales constitue un pilier majeur du système alimentaire local.
+Plus de 90 % des acteurs de cette chaîne de valeur sont des femmes qui produisent et commercialisent
+des aliments cuits à la vapeur tels que l’Ablo, l’Ablah, le Lèlè, le Com et le Wassa-wassa.
+</p>
+</div>
+
+<div class="card">
+<p>
+La cuisson traditionnelle à la vapeur repose exclusivement sur le bois de chauffe ou le charbon.
+Cette pratique entraîne la déforestation, des émissions de gaz à effet de serre et des risques sanitaires
+importants liés à l’exposition à la fumée.
+La biomasse représente plus de 60 % de la consommation énergétique nationale et plus de 80 % des
+ménages en Afrique subsaharienne dépendent encore du bois pour la cuisson.
+</p>
+
+<p>
+L’absence de contrôle précis de la température provoque des cuissons inégales, une qualité variable
+des produits et des pertes économiques. Tandis que les fournisseurs de bois bénéficient du système,
+les femmes transformatrices supportent l’essentiel des risques sanitaires et économiques.
+</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="solution">
+<div class="container">
+<h2>Steam Cooker – La solution</h2>
+
+<div class="grid grid-2">
+
+<div class="card">
+<img src="tt.jpg" alt="[PHOTO PROTOTYPE STEAM COOKER]">
+<img src="IMG-20260218-WA0135.jpg" alt="[PHOTO PROTOTYPE STEAM COOKER]">
+<p>
+Steam Cooker est un cuiseur vapeur électrique intelligent inspiré de la simplicité d’un cuiseur à riz
+et spécialement conçu pour les aliments traditionnels locaux.
+Il régule automatiquement la température afin de garantir une cuisson propre, homogène
+et économe en énergie.
+</p>
+<p>
+La solution modernise les pratiques traditionnelles sans modifier les recettes ni les caractéristiques
+culturelles des produits. Elle est compatible avec une future intégration solaire.
+</p>
+</div>
+
+<div class="card">
+<ul>
+<p>
+Steam Cooker est un cuiseur vapeur électrique intelligent conçu pour remplacer la cuisson traditionnelle
+au bois utilisée dans la préparation de l’Ablo et d’autres aliments vapeur. Il s’agit d’un système simple,
+sécurisé et économe en énergie permettant de produire une vapeur contrôlée grâce à un dispositif
+de régulation automatique de la température.
+L’appareil intègre une résistance électrique optimisée, un capteur thermique et un module de contrôle
+assurant une température stable tout au long du processus de cuisson.
+Cette stabilité garantit une cuisson homogène, réduit les pertes et améliore la qualité finale des produits.
+Steam Cooker réduit fortement la dépendance au bois, diminue les émissions de fumée et protège la santé
+des utilisatrices, majoritairement des femmes. Il améliore également la productivité en réduisant le temps
+de cuisson et en assurant des résultats constants.
+Conçu pour être accessible, robuste et adaptable, le système pourra évoluer vers une alimentation solaire
+et être utilisé pour plusieurs produits traditionnels cuits à la vapeur.
+</p>
+<li>Régulation automatique de la température</li>
+<li>Alternative à la cuisson au bois et au charbon</li>
+<li>Conçu et développé à Kétou, département du Plateau, Bénin</li>
+<li>Testé avec des vendeuses d’Ablo, de Com, de Lèlè, d’Ablah et de Wassa-wassa</li>
+<li>Développé en partenariat avec l’AgriTech Hub (UNA)</li>
+<li>Financement de démarrage : 1 000 € pour le prototype</li>
+</ul>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="impact">
+<div class="container">
+<h2>Impacts du projet</h2>
+
+<div class="grid grid-2">
+
+<div class="card">
+<h3>Durabilité environnementale</h3>
+<p>
+Les vendeuses consomment environ 15 à 25 kg de bois par jour.
+La phase pilote permettra d’éviter l’utilisation de 1 à 1,5 tonne de bois en six mois.
+À plus grande échelle, cela réduit fortement la pression sur les forêts, limite la déforestation
+et améliore la qualité de l’air local.
+</p>
+</div>
+
+<div class="card">
+<h3>Sécurité alimentaire et nutritionnelle</h3>
+<p>
+Steam Cooker améliore la stabilité de la cuisson et la sécurité sanitaire des aliments grâce
+à un contrôle précis et reproductible de la température.
+Cela améliore la qualité des produits, réduit les pertes et renforce la confiance des consommateurs.
+Les préférences culturelles et les recettes traditionnelles sont entièrement préservées.
+</p>
+</div>
+
+<div class="card">
+<h3>Impact socio-économique</h3>
+<p>
+Le projet cible directement les femmes transformatrices. Il réduit leur exposition à la fumée et à la chaleur,
+améliore la productivité et contribue à la stabilisation des revenus.
+À long terme, il peut créer des emplois dans la fabrication, la maintenance et la formation.
+</p>
+</div>
+
+<div class="card">
+<h3>Chiffres clés</h3>
+<ul>
+<li>15 à 25 kg de bois économisés par femme et par jour</li>
+<li>Plus de 90 % des transformatrices sont des femmes</li>
+<li>60 % de la consommation énergétique nationale issue de la biomasse</li>
+<li>1 à 1,5 tonne de bois économisée pendant la phase pilote</li>
+</ul>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="plan">
+<div class="container">
+<h2>Objectifs et plan de mise en œuvre</h2>
+
+<div class="grid grid-2">
+
+<div class="card">
+<h3>Objectifs (période du challenge 2026)</h3>
+<ul>
+<li>Collecter des données réelles de température lors de la cuisson traditionnelle</li>
+<li>Développer le système électronique et les capteurs du prototype Steam Cooker</li>
+<li>Tester le système avec cinq vendeuses pilotes en conditions réelles</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Calendrier (mars – septembre 2026)</h3>
+<ul>
+<li>Mars–avril : conception et protocole thermique</li>
+<li>Avril–mai : achats, assemblage et calibration</li>
+<li>Juin : installation et formation des utilisatrices</li>
+<li>Juin–juillet : tests terrain et collecte de données</li>
+<li>Août : analyse d’impact et enquêtes consommateurs</li>
+<li>Septembre : rapport final et diffusion</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Suivi et évaluation</h3>
+<ul>
+<li>Consommation de bois avant et après l’installation</li>
+<li>Consommation électrique par cycle de cuisson</li>
+<li>Stabilité de la température</li>
+<li>Temps de cuisson et volumes produits</li>
+<li>Revenus et satisfaction des vendeuses</li>
+<li>Satisfaction des consommateurs</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Scalabilité</h3>
+<p>
+Le système repose sur des composants disponibles localement et une technologie simple.
+Il peut être reproduit dans d’autres communes du département du Plateau puis dans d’autres régions du Bénin.
+Si chaque vendeuse économise 20 kg de bois par jour, cela représente environ 120 tonnes de bois
+économisées par an.
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="team">
+<div class="container">
+<h2>Notre équipe</h2>
+
+<div class="grid grid-2">
+
+<div class="team-member">
+<img src="rrr.jpeg" alt="[PHOTO ÉQUIPE]">
+<h4>Rouchdane A. Olayiwolé Oloulotan</h4>
+<p>
+« Nous voulons réduire la pénibilité du travail des femmes tout en protégeant nos forêts. »
+</p>
+</div>
+
+<div class="team-member"><img src="michel.jpeg" alt=""><h4>Michel Carrel Akotenou Kpèssou Gandonou</h4></div>
+<div class="team-member"><img src="godson.jpeg" alt=""><h4>Israël Godfried Samuel Togbe</h4></div>
+<div class="team-member"><img src="hachi.jpeg" alt=""><h4>Hachirath Adouni Monchebolatan Aboubakar</h4></div>
+<div class="team-member"><img src="ariane.jpeg" alt=""><h4>Ariane Harmonie Marina Djihoulande</h4></div>
+<div class="team-member"><img src="lei.jpeg" alt=""><h4>Léila Olympio</h4></div>
+<div class="team-member"><img src="manane.jpeg" alt=""><h4>Abdul Manane Aremou Akande</h4></div>
+
+</div>
+</div>
+</section>
+
+<section id="partners">
+<div class="container">
+<h2>Partenaires et parties prenantes</h2>
+
+<div class="card">
+<ul>
+<li>AgriTech Hub et CeCoMA – Université Nationale d’Agriculture</li>
+<li>Laboratoire d’Intelligence Artificielle – Benin Excellence</li>
+<li>Dr Ing. Maurel Aza-Gnandji – expert en génie électrique et énergies renouvelables</li>
+<li>Plume Verte – Presse universitaire et Radio Kétou</li>
+<li>Vendeuses de plats vapeur et Association des femmes transformatrices de Kétou</li>
+</ul>
+</div>
+
+<div class="partners" style="text-align:center;">
+<img src="images/una.jpg" alt="[LOGO PARTENAIRE]">
+<img src="images/egr.jpg" alt="[LOGO PARTENAIRE]">
+<img src="images/ag.PNG" alt="[LOGO PARTENAIRE]">
+<img src="images/be.jpg" alt="[LOGO PARTENAIRE]">
+</div>
+
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+<h2>Contact et soutien</h2>
+
+<p>
+Souhaitez-vous soutenir Steam Cooker, collaborer avec notre équipe ou en savoir plus sur le projet ?
+</p>
+
+<form style="max-width:500px;margin:auto;">
+<input type="text" placeholder="Votre nom">
+<input type="email" placeholder="Votre adresse e-mail">
+<textarea rows="5" placeholder="Votre message"></textarea>
+<button class="btn">Envoyer le message</button>
+</form>
+
+</div>
+</section>
+
+<footer>
+<p>Steam Cooker – Université Nationale d’Agriculture (UNA), Bénin – 2026</p>
+<p>Cuisson vapeur intelligente pour des systèmes alimentaires locaux durables et résilients.</p>
+</footer>
+
+</div>
+
+<script>
+function setLang(lang){
+    document.getElementById("lang-en").style.display =
+        lang === "en" ? "block" : "none";
+
+    document.getElementById("lang-fr").style.display =
+        lang === "fr" ? "block" : "none";
+}
+</script>
+</body>
+</html>
